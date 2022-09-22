@@ -1,0 +1,37 @@
+Source: node-pako
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Bastien Roucariès <rouca@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , mocha <!nocheck>
+ , node-assert <!nocheck>
+ , node-async <!nocheck>
+ , node-babel7
+ , node-lodash <!nocheck>
+ , node-rollup-plugin-babel
+ , node-rollup-plugin-commonjs
+ , node-rollup-plugin-node-resolve
+ , node-rollup-plugin-terser
+ , rollup
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-pako
+Vcs-Git: https://salsa.debian.org/js-team/node-pako.git
+Homepage: https://github.com/nodeca/pako
+Rules-Requires-Root: no
+
+Package: node-pako
+Architecture: all
+Depends: ${misc:Depends}
+Multi-Arch: foreign
+Breaks: node-browserify-zlib (<< 0.2.0+20170820git8b3f0a862f6b+dfsg-5~)
+Provides: libjs-pako (= ${source:Version})
+Recommends: javascript-common
+Description: fast zlib port to pure javascript
+ This module is a port of zlib to pure javascript optimized for speed.
+ .
+ Pako could compress stream and string using well known zlib API.
+ .
+ Node.js is an event-based server-side JavaScript engine.

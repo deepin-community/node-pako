@@ -1,0 +1,25 @@
+Description: add some exports needed for node-browserify-zlib
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2020-12-14
+
+--- a/index.js
++++ b/index.js
+@@ -5,6 +5,10 @@
+ 
+ const { Inflate, inflate, inflateRaw, ungzip } = require('./lib/inflate');
+ 
++const Zstream = require('./lib/zlib/zstream');
++const zlib_deflate = require('./lib/zlib/deflate');
++const zlib_inflate = require('./lib/zlib/inflate');
++
+ const constants = require('./lib/zlib/constants');
+ 
+ module.exports.Deflate = Deflate;
+@@ -16,3 +20,6 @@
+ module.exports.inflateRaw = inflateRaw;
+ module.exports.ungzip = ungzip;
+ module.exports.constants = constants;
++module.exports.Zstream = Zstream;
++module.exports.zlib_deflate = zlib_deflate;
++module.exports.zlib_inflate = zlib_inflate;

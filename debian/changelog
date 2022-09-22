@@ -1,0 +1,107 @@
+node-pako (2.0.4+ds-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on node-lodash and nodejs
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on mocha
+
+  [ Yadd ]
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix filenamemangle
+  * Drop dependency to nodejs
+  * New upstream version 2.0.4+ds
+
+ -- Yadd <yadd@debian.org>  Tue, 16 Nov 2021 10:13:45 +0100
+
+node-pako (2.0.2+ds-1) unstable; urgency=medium
+
+  * Team upload
+  * Fix copyright
+  * Remove unneeded version constraint
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Use dh-sequence-nodejs
+  * Team upload
+  * New upstream version 2.0.2+ds
+  * Build with rollup
+  * Drop patches
+  * Add some exports needed for node-browserify-zlib
+  * Add a "Breaks" against node-browserify-zlib <
+    0.2.0+20170820git8b3f0a862f6b+dfsg-5~
+  * Apply multi-arch hints (foreign)
+  * Install browser files (Closes: #877730)
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 14 Dec 2020 09:06:50 +0100
+
+node-pako (1.0.11+ds-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Update standards version to 4.4.1, no changes needed.
+  * debian/copyright: use spaces rather than tabs to start continuation
+    lines.
+
+  [ Xavier Guimard ]
+  * Declare compliance with policy 4.5.0
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * Use pkg-js-tools auto test & install
+
+  [ Nilesh ]
+  * New upstream version 1.0.11+ds
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 29 Jan 2020 11:17:56 +0100
+
+node-pako (1.0.10+ds-1) unstable; urgency=medium
+
+  * New upstream version: fix raw inflate bug
+  * Move to /usr/share
+  * Bump debhelper and policy (no changes)
+
+ -- Bastien Roucariès <rouca@debian.org>  Thu, 19 Sep 2019 23:18:58 +0200
+
+node-pako (1.0.7+ds-1) unstable; urgency=medium
+
+  * New upstream version: fix error on chrome
+  * Fix Buffer() warnings
+
+ -- Bastien Roucariès <rouca@debian.org>  Tue, 01 Jan 2019 23:11:32 +0100
+
+node-pako (1.0.6+ds-3) unstable; urgency=medium
+
+  * Finalize CI test
+
+ -- Bastien Roucariès <rouca@debian.org>  Wed, 30 May 2018 23:07:23 +0200
+
+node-pako (1.0.6+ds-2) unstable; urgency=medium
+
+  * New debian version
+  * Move to salsa
+
+ -- Bastien Roucariès <rouca@debian.org>  Tue, 22 May 2018 23:00:31 +0200
+
+node-pako (1.0.6+ds-1) unstable; urgency=medium
+
+  * New upstream version
+  * Move to javascript section
+  * Bump policy (no changes)
+
+ -- Bastien Roucariès <rouca@debian.org>  Wed, 04 Oct 2017 23:32:46 +0200
+
+node-pako (1.0.5+ds-2) unstable; urgency=medium
+
+  * Add autopkgtest.
+  * Fix examples.
+
+ -- Bastien Roucariès <rouca@debian.org>  Sun, 09 Apr 2017 20:39:08 +0200
+
+node-pako (1.0.5+ds-1) unstable; urgency=low
+
+  * Initial release (Closes: #840609)
+
+ -- Bastien Roucariès <rouca@debian.org>  Mon, 27 Mar 2017 16:08:58 +0200
